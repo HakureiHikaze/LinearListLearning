@@ -14,7 +14,9 @@
 #include "SinglyLinkedList.h"
 
 int main(int argc, char** argv){
-    std::cout<<"Helloworld"<<std::endl;
+    int a[10] = {12,23,45,21,22,44,87,54,12,111};
+    SinglyLinkedList<int> test = {a,10};
+    std::cout<<"Helloworld\n"<<test<<std::endl;
     system("pause");
     exit(0);
 }
