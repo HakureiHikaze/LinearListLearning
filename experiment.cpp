@@ -9,14 +9,14 @@
  * 
  */
 #include<iostream>
-#include<stdlib.h>
 
 #include "SinglyLinkedList.h"
 
 int main(int argc, char** argv){
-    int a[10] = {12,23,45,21,22,44,87,54,12,111};
-    SinglyLinkedList<int> test = {a,10};
-    std::cout<<"Helloworld\n"<<test<<std::endl;
-    system("pause");
+    int a[10] = {12,23,45,21,22,44,87,54,17,111};
+    SinglyLinkedList<int> test = {a,10, FOOT_INSERT};
+    //SinglyLinkedList<int> test = {};
+    test.insertData(10, 67);
+    std::cout<<test.deleteData(9)<<std::endl<<test<<std::endl;
     exit(0);
 }
